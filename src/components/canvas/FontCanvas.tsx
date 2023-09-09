@@ -1,7 +1,7 @@
 import  { useRef, useEffect } from 'react';
 import { useThree, Canvas,  } from '@react-three/fiber';
 import { Center, Text3D, OrbitControls} from '@react-three/drei';
-
+import { Color } from 'three';
 const FontCanvas = () => {
   return (
     <Canvas
@@ -16,7 +16,8 @@ const FontCanvas = () => {
       <Center>
         <Font />
       </Center>
-      <axesHelper scale={0} position={[0, 0, 0]} onUpdate={(self) => self.setColors("#ff2080", "#20ff80", "#2080ff")}/>
+      <axesHelper scale={0} position={[0, 0, 0]} onUpdate={(self) => self.setColors(new Color('#ff2080'), new Color('#20ff80'), new Color('#2080ff'))
+  }/>
       <OrbitControls enableZoom={false} enablePan={false}   />
     </Canvas>
   );
