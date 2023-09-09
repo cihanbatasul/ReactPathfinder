@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import  { useRef, useEffect } from 'react';
 import { useThree, Canvas,  } from '@react-three/fiber';
 import { Center, Text3D, OrbitControls} from '@react-three/drei';
 

@@ -266,7 +266,7 @@ const Dimensions: React.FC<props> = ({onClose, dimensions, checked}: props) => {
 
 // Algorithm Modal
 
-const Algorithm: React.FC<props> = ({onClose, checked}: props) => {
+const Algorithm: React.FC<props> = ({onClose}: props) => {
 
   const dispatch = useDispatch()
   const algorithm = useSelector((state: RootState) => state.grid.algorithm)
@@ -304,7 +304,7 @@ const Algorithm: React.FC<props> = ({onClose, checked}: props) => {
     
     className="bg-white   rounded-md p-10 px-4">
     
-      <label for="underline_select" className="sr-only">Algo</label>
+      <label htmlFor="underline_select" className="sr-only">Algo</label>
 <select id="underline_select" className="block py-2.5 px-0 w-full  dark:text-black bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer text-center" onChange={handleChange}>
     <option  value="">Choose algorithm</option>
     <option value="dfs">Depth First Search</option>
@@ -338,7 +338,7 @@ const Algorithm: React.FC<props> = ({onClose, checked}: props) => {
  const CustomModal: React.FC<props> = ({visible, type,  onClose, startNode, targetNode, dimensions}: props) =>  {
 
   const [checked, setChecked] = useState(false)
-  const handleCheckboxChange = (event) => {
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setChecked(event.target.checked);
   }
   if(!visible)  return null
@@ -375,7 +375,7 @@ exit={{x: window.innerWidth, transition: {duration: 0.4}}}
       </div>
     <div className="ml-3 flex items-center mb-4">
     {type !== "algos" && type !== "mazes" ? <div><input id="insta_save" type="checkbox" value="" className="sm: w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer" onChange={handleCheckboxChange} checked={checked}/>
-    <label for="insta_save" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Werte beim Ändern direkt übernehmen</label></div> : null}
+    <label htmlFor="insta_save" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Werte beim Ändern direkt übernehmen</label></div> : null}
 </div>
    {selectedModal}
    </div>

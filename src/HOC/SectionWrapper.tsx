@@ -1,8 +1,8 @@
 import { styles } from '../styles'
 import { motion } from 'framer-motion'
 
-const SectionWrapper = (Component: any, idName: string) => {
-
+const SectionWrapper = (Component: any) => {
+  
   return function HOC() {
     return (
       <motion.section

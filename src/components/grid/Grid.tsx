@@ -7,9 +7,7 @@ import Modal from '../modals/Tutorial'
 
 const Grid = () => {
 const [tutorialOpen, setTutorialOpen] = useState(false)
-const openTutorial = () => {
-  setTutorialOpen
-}
+
   return (
     <motion.div 
     initial={{width: 0}}
@@ -50,4 +48,4 @@ exit={{x: window.innerWidth, transition: {duration: 0.4}}}>
   )
 }
 
-export default SectionWrapper(Grid, 'grid')
+export default SectionWrapper(Grid)
