@@ -493,7 +493,7 @@ const start: GridCellData = grid[startNodeY][startNodeX]
         whileTap={{scale:  0.9}}
         data-modal-toggle="dimensions"
         className='dim-button inline-flex justify-center    items-center py-3 px-5 text-base font-medium    text-center text-white rounded-lg bg-blue-700    hover:bg-blue-800 focus:ring-4 focus:ring-blue-300   dark:focus:ring-blue-900 my-4'
-        onClick={(e) => handleGridButtonClick("dimensions")}
+        onClick={() => handleGridButtonClick("dimensions")}
         >
         Dimensions
         </motion.button>
@@ -502,7 +502,7 @@ const start: GridCellData = grid[startNodeY][startNodeX]
         whileHover={{scale: 1.1}}
         whileTap={{scale:  0.9}}
         className='dim-button inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 my-4'
-        onClick={(e) => handleGridButtonClick("algos")}
+        onClick={() => handleGridButtonClick("algos")}
         >
         Algorithms
         </motion.button>
@@ -511,7 +511,7 @@ const start: GridCellData = grid[startNodeY][startNodeX]
         whileHover={{scale: 1.1}}
         whileTap={{scale:  0.9}}
         className='dim-button inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 my-4'
-        onClick={(e) => handleGridButtonClick("startNode")}
+        onClick={() => handleGridButtonClick("startNode")}
         >
         Start
         </motion.button>
@@ -519,7 +519,7 @@ const start: GridCellData = grid[startNodeY][startNodeX]
         whileHover={{scale: 1.1}}
         whileTap={{scale:  0.9}}
         className='dim-button inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 my-4'
-        onClick={(e) => handleGridButtonClick("targetNode")}
+        onClick={() => handleGridButtonClick("targetNode")}
         >
         Target
         </motion.button>
