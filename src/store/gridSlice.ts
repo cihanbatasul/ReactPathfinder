@@ -11,7 +11,7 @@ const initialState: GridState = {
   start: { x: 5, y: 5 },
   target: { x: 40, y: 2 },
   dimensions: { x: 45, y: 16 },
-  algorithm: "dfs",
+  algorithm: "astar",
 };
 
 export const gridState = createSlice({

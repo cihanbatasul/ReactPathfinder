@@ -26,22 +26,6 @@ const CuteAlien = () => {
 
 
 const AlienCanvas = () => {
-    const [isMobile, setIsMobile] = useState(false)
-    
-    useEffect(() => {
-        const mediaQuery = window.matchMedia("(max-width: 640px)")
-    
-        setIsMobile(mediaQuery.matches);
-        const handleMediaQueryChange = (event: any) => {
-          setIsMobile(event.matches)
-        } 
-    
-        mediaQuery.addEventListener('change', handleMediaQueryChange)
-    
-        return () => {
-          mediaQuery.removeEventListener('change', handleMediaQueryChange)
-        }
-      }, [])
 
   return (
     <Canvas

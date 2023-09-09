@@ -238,7 +238,12 @@ const start: GridCellData = grid[startNodeY][startNodeX]
 
   const ASTARrunPathfinder = async () => {
     const openSet = new PriorityQueue<GridCellData>({
-      comparator: (a, b) => a.totalCost - b.totalCost,
+      comparator: (a, b) => {
+        const aCost = a?.totalCost ?? Infinity;
+        const bCost = b?.totalCost ?? Infinity;
+  
+        return aCost - bCost;
+      } 
     });
   
     start.totalCost = 0;
@@ -271,9 +276,9 @@ const start: GridCellData = grid[startNodeY][startNodeX]
   
         if (withinBounds && !grid[y][x].isWall) {
           const neighbor = grid[y][x];
-          const newCost = currentNode.totalCost + neighbor.weight + manhattanDistance(neighbor, target);
+          const newCost = (currentNode.totalCost ?? 0) + neighbor.weight + manhattanDistance(neighbor, target)
   
-          if (!visitedNodes.has(neighbor) && newCost < neighbor.totalCost) {
+          if (!visitedNodes.has(neighbor) && newCost <  (neighbor.totalCost ?? Infinity)) {
             neighbor.totalCost = newCost
             neighbor.previousNode = currentNode
             openSet.queue(neighbor);
