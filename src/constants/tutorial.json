@@ -1,0 +1,18 @@
+{
+    "intro": {
+        "title": "Was ist ein Pathfinding Visualizer?",
+        "answer": "Ein Pathfinding-Visualisierer ist eine Software, die den Prozess des Findens des kürzesten oder optimalen Wegs zwischen Punkten auf einer Karte oder in einem Gitter darstellt. Er hilft Entwicklern und Enthusiasten dabei, Pfadfindungsalgorithmen zu verstehen und zu testen, indem er die Suche visuell darstellt und Benutzern erlaubt, Start- und Zielpunkte sowie Hindernisse festzulegen. Dies ist nützlich in Bereichen wie GPS-Navigation und Videospielentwicklung.",
+        "pic": ""
+    },
+    "algorithm": {
+        "title": "Wie kann ich einen Algorithmus auswählen?",
+        "answer": "Einen Algorithmus kann man auswählen, in dem man im Menü den Button 'Algorithm' klickt und im dann erscheinenden Menü aus einem Dropdown Auswahlmenü den gewünschten Algorithmus auswählt.",
+        "pic": ""
+    },
+    "walls": {
+        "title": "Wie platziere ich Hindernisse?",
+        "answer": "Ein Pathfinding-Visualisierer hat den Vorteil, dass er Hindernisse miteinberechnet. Um Hindernisse zu platzieren, muss man im Menü den Button 'Draw Wall' anklicken und anschließend mit der Maus die Wand zeichnen. Beim Klicken auf die Gridfläche oder dem erneuten Klicken auf den Button kann man die Hindernissplatzierung beenden.",
+        "pic": "./src/assets/tutorial/walls.gif"
+    }
+
+}
