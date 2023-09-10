@@ -37,7 +37,7 @@ const GameOver: React.FC<gameOverProps>= ({muted, outcome}) => {
             animate={{ scaleX: 1.5, scaleY: 1.5, opacity: 1 }}
             transition={{ duration: 1.3 }}
           >
-            {outcome === 'won' ?  'ALIEN WAS ABLE TO REACH HIS HOME PLANET' : 'THE PATH IS BLOCKED, ALIEN IS TRAPPED'}
+            {outcome === 'won' ?  'ALIEN WAS ABLE TO REACH ITS HOME PLANET' : 'THE PATH IS BLOCKED, ALIEN IS TRAPPED'}
             
           </motion.p>
           <audio ref={audio} src={`${outcome === 'won'? goalReached :gameOverSound }`}  autoPlay/>

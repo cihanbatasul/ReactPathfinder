@@ -4,16 +4,19 @@ import {OrbitControls, useGLTF} from '@react-three/drei'
 import CanvasLoader from '../Loader'
 
 const CuteAlien = () => {
-    const boy = useGLTF('./src/assets/alien_hominid/scene.gltf')
+
+    const assetBaseUrl = import.meta.env.VITE_ASSET_BASE_URL || ''
+
+    const boy = useGLTF(`${assetBaseUrl}/alien_hominid/scene.gltf`)
 
     return (
         <group>
-            <hemisphereLight intensity={0.6} groundColor="black" />
-            <pointLight intensity={1.2} position={[0, 10, 0]} />
+            <hemisphereLight intensity={1} groundColor="#51124c" />
+            <pointLight intensity={1.2} position={[2.2, 1.7, 0.9]} />
             <spotLight
-                position={[-20, 50, 10]}
-                angle={0.3}
-                penumbra={1}
+                position={[0, -2.8, 0]}
+                angle={0.8}
+                penumbra={0.5}
                 intensity={1}
                 castShadow
                 shadow-mapSize-width={1024}
