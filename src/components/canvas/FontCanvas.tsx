@@ -97,7 +97,7 @@ const Font = () => {
         lineHeight={0.5}
         letterSpacing={-0.06}
         size={1}
-        font="./src/assets/fonts/Vina Sans.json"
+        font="/fonts/Vina Sans.json"
       >
         {`Pathfinding Visualizer\nby Cihan`}
         <meshNormalMaterial />

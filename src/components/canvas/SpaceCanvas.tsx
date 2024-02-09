@@ -6,7 +6,7 @@ import CanvasLoader from '../Loader'
 
 const SpaceBoy = () => {
 
-    const boy = useGLTF('./src/assets/space_boi/scene.gltf')
+    const boy = useGLTF('/space_boi/scene.gltf')
 
   return (
     <mesh>

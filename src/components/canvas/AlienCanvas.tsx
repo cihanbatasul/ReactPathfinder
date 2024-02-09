@@ -5,9 +5,9 @@ import CanvasLoader from '../Loader'
 
 const CuteAlien = () => {
 
-    const assetBaseUrl = import.meta.env.VITE_ASSET_BASE_URL || ''
-
-    const boy = useGLTF(`${assetBaseUrl}/alien_hominid/scene.gltf`)
+    //const assetBaseUrl = import.meta.env.VITE_ASSET_BASE_URL || ''
+    
+    const boy = useGLTF(`/public/alien_hominid/scene.gltf`)
 
     return (
         <group>

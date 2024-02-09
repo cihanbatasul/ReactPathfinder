@@ -12,7 +12,7 @@
     "walls": {
         "title": "Wie platziere ich Hindernisse?",
         "answer": "Ein Pathfinding-Visualisierer hat den Vorteil, dass er Hindernisse miteinberechnet. Um Hindernisse zu platzieren, muss man im Menü den Button 'Draw Wall' anklicken und anschließend mit der Maus die Wand zeichnen. Beim Klicken auf die Gridfläche oder dem erneuten Klicken auf den Button kann man die Hindernissplatzierung beenden.",
-        "pic": "./src/assets/tutorial/walls.gif"
+        "pic": "/tutorial/walls.gif"
     }
 
 }

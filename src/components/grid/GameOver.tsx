@@ -1,7 +1,7 @@
 import {motion} from 'framer-motion'
 import { useRef, useState } from 'react'
-import gameOverSound from '../../assets/sounds/gameover.mp3'
-import goalReached from '../../assets/sounds/goalreached.wav'
+import gameOverSound from '/sounds/gameover.mp3'
+import goalReached from '/sounds/goalreached.wav'
 
 interface  gameOverProps {
     muted: boolean,
@@ -22,7 +22,7 @@ const GameOver: React.FC<gameOverProps>= ({muted, outcome}) => {
   return (
     <div className="container relative flex flex-col items-center mt-8 h-full">
      
-        <motion.div className="absolute m-auto top-64   text-center font-bold">
+        <motion.div className="absolute m-auto top-64 z-50  text-center font-bold">
           <motion.p
             initial={{ scaleX: 0, scaleY: 0.2, opacity: 0 }}
             animate={{ scaleX: 4, scaleY: 4, opacity: 1 }}

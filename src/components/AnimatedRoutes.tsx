@@ -15,8 +15,8 @@ const AnimatedRoutes = () => {
     <Routes location={location} key={location.pathname}>
     <Route path="/" element={<LandingPage/>} />
     <Route path="/ReactPathfinder" element={<LandingPage/>} />
-    <Route path="/visualizer" element={<Grid/>}/>
-    <Route path="/about" element={<div>about</div>}/>
+    <Route path="/ReactPathfinder/visualizer" element={<Grid/>}/>
+    <Route path="/ReactPathfinder/about" element={<div>about</div>}/>
     </Routes>
     </AnimatePresence>
     </div>
