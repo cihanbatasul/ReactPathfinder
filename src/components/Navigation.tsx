@@ -18,7 +18,7 @@ const Navbar = () => {
         to="/"
         className='flex item-center gap-2'
         onClick={() => {
-          setActive("/ReactPathfinder")
+          setActive("/")
           window.scrollTo(0, 0)
         }}>
         <div >
@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
         </Link>
         <div className={`${styles.paddingX} sm:block hidden py-5 gap-6`}>
-        <Link to="/ReactPathfinder/visualizer" className={`${
+        <Link to="/visualizer" className={`${
               active === "Visualizer" ? "text-[#5ff096] underline underline-offset-4"  : "text-white"
             }  hover:text-[#5ff096] text-[18px] font-medium cursor-pointer`} onClick={() => setActive("Visualizer")}>
           Visualizer
@@ -43,13 +43,13 @@ const Navbar = () => {
             <div
             className={`${!toggle ? 'hidden' : 'flex'} flex-col p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
     
-    <Link to="/ReactPathfinder" className={`${
+    <Link to="/" className={`${
               active === "Home" ? "text-[#5ff096] underline underline-offset-4"  : "text-white"
             } hover:text-[#5ff096] text-[18px] font-medium cursor-pointer`} onClick={() => setActive("Home")}>
           Home
          </Link>
           
-         <Link to="/ReactPathfinder/visualizer" className={`${
+         <Link to="/visualizer" className={`${
               active === "Visualizer" ? "text-[#5ff096] underline underline-offset-4"  : "text-white"
             } hover:text-[#5ff096] text-[18px] font-medium cursor-pointer`} onClick={() => setActive("Visualizer")}>
           Visualizer

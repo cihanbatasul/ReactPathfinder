@@ -1,6 +1,6 @@
 
 import {Hero} from './'
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import {motion} from  'framer-motion'
 import Modal from './modals/Tutorial'
 function LandingPage() {
@@ -10,17 +10,16 @@ function LandingPage() {
   }
 
   return (
-<motion.div className='relative h-full z-0 bg-primary '
-initial={{width: 0}}
-animate={{width: "100%"}}
-exit={{x: window.innerWidth, transition: {duration: 0.4}}}
-
+<Suspense>
+<motion.div 
+className='relative h-full z-0 bg-primary '
 >
     <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
 {tutorialOpen ?  <Modal isOpen onClose={() => setTutorialOpen(false)}/> : null}
     <Hero onClick={openTutorial}/>
     </div>
     </motion.div>
+</Suspense>
   )
 }
 

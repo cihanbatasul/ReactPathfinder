@@ -29,7 +29,7 @@ const Hero: React.FC<HeroProps> = ({onClick}) => {
         <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Gestrandet auf Planet Erde, versucht eine Truppe von Aliens ihren Weg zurück nach Hause zu finden. Doch die wissbegierige Menschheit will dies nicht zulassen und stellt ihnen Steine in den Weg.</p>
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           
-            <Link to={`/ReactPathfinder/visualizer`}>
+            <Link to={`/visualizer`}>
               <motion.button 
               whileHover={{scale: 1.1}}
               whileTap={{scale:  0.9}}

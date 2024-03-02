@@ -9,10 +9,9 @@ const Grid = () => {
 const [tutorialOpen, setTutorialOpen] = useState(false)
 
   return (
-    <motion.div 
-    initial={{width: 0}}
-animate={{width: "100%"}}
-exit={{x: window.innerWidth, transition: {duration: 0.4}}}>
+      <motion.div
+       
+    >
       <div className=" h-full">
       {tutorialOpen ?  <Modal isOpen onClose={() => setTutorialOpen(false)}/> : null}
 
@@ -48,4 +47,5 @@ exit={{x: window.innerWidth, transition: {duration: 0.4}}}>
   )
 }
 
-export default SectionWrapper(Grid)
+const GridComponent = SectionWrapper(Grid) 
+export default GridComponent

@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react(), legacy({
     targets: ['ie  >= 11'],
     additionalLegacyPolyfills: ['regenerator-runtime/runtime'],  })],
-  base: 'ReactPathfinder',
+  base: '/',
   build: {
     outDir: 'build',
   }

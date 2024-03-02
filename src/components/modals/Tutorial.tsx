@@ -75,10 +75,11 @@ md:h-auto
     <div className="
     translate
     h-full
+    p-12
     lg:h-auto
     md:h-auto
     border-0
-    rounded-lg
+    rounded-sm
     shadow-lg
     relative
     flex

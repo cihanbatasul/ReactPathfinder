@@ -1,10 +1,10 @@
-import { LandingPage } from '.'
-import Grid from './grid/Grid'
+// import { LandingPage } from '.'
+// import Grid from './grid/Grid'
 import { Routes, Route, useLocation } from 'react-router-dom'
-
 import {AnimatePresence, } from 'framer-motion'
-
-
+import { lazy } from 'react'
+const Grid = lazy(() => import('./grid/Grid'))
+const LandingPage = lazy(() => import('./LandingPage'))
 const AnimatedRoutes = () => {
     const location = useLocation()
 
@@ -14,9 +14,8 @@ const AnimatedRoutes = () => {
     <AnimatePresence mode='wait'>
     <Routes location={location} key={location.pathname}>
     <Route path="/" element={<LandingPage/>} />
-    <Route path="/ReactPathfinder" element={<LandingPage/>} />
-    <Route path="/ReactPathfinder/visualizer" element={<Grid/>}/>
-    <Route path="/ReactPathfinder/about" element={<div>about</div>}/>
+    <Route path="/visualizer" element={<Grid/>}/>
+    <Route path="/about" element={<div>about</div>}/>
     </Routes>
     </AnimatePresence>
     </div>
