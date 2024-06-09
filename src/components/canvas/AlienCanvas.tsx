@@ -7,7 +7,7 @@ const CuteAlien = () => {
 
     //const assetBaseUrl = import.meta.env.VITE_ASSET_BASE_URL || ''
     
-    const boy = useGLTF(`/public/alien_hominid/scene.gltf`)
+    const boy = useGLTF(`/alien_hominid/scene.gltf`)
 
     return (
         <group>
